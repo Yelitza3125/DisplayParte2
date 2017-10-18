@@ -1,0 +1,33 @@
+/*Mediante el selector universal, aplicamos el valor de border-box a todos los elementos, para poder modificar sus dimensiones y obtener el ancho deaseado sin que se vea afectado por el padding, el border y el margin*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*Mediante el selector de tipo, dimensionamos el ancho y alto de los contenedores. Aquí ya no aplicamos la propiedad display, porque los elementos utilizados, como el párrafo, tienen una naturaleza de bloque*/
+div {
+    width: 250px;
+    height: 150px;     
+}
+
+/*Con el selector de clase, se aplica el color de fondo mediante RGB Hexadecimal, solo a los elementos cuyo atributo clase tengan el valor "yellow"*/
+.yellow {
+    background-color: #ffc400;
+}
+
+/*Con el selector de clase, se les aplica el color de fondo negro, a los que elementos cuyo atributo clase, tengan el valor "black"*/
+.black {
+    background-color: black;
+}
+
+/*Mediante el selector anidado aplicamos el color blanco en el párrafo, a todos los elementos de etiqueta <p> que esten dentro de un elemento, cuyo atributo clase tenga el valor "black"*/
+.black p {
+    color: white;
+}
+
+/*Con un selector de tipo, a todos los elementos de etiqueta <p>, se les aplica un margen, un padding superior y un tamaño de fuente*/
+p {
+    margin: 18px;
+    padding-top: 15px;
+    font-size: 18px;
+}
